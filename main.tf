@@ -5,4 +5,10 @@ module "gke_cluster" {
   GKE_CLUSTER_NAME = var.GKE_CLUSTER_NAME
   GKE_NUM_NODES    = var.GKE_NUM_NODES
 }
-  
+
+terraform {
+  backend "gcs" {
+    bucket = "tf-state_united-electron-419120"
+    prefix = "terraform/state"
+  }
+} 
