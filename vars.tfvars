@@ -1,0 +1,7 @@
+GOOGLE_PROJECT = "k8s-demo-422613"
+GOOGLE_REGION = "europe-west3-c"
+GKE_CLUSTER_NAME = "kbot-demo"
+GKE_NUM_NODES = 2
+GKE_MACHINE_TYPE = "e2-medium"
+# GITHUB_OWNER = ""
+# GITHUB_TOKEN = ""

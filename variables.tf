@@ -29,7 +29,7 @@ variable "GKE_MACHINE_TYPE" {
   description = "Machine type"
 }
 
-# *** module "flux_bootstrap" ***
+# *** module "flux_bootstrap" and module "github_repository" ***
 
 variable "GITHUB_OWNER" {
   type        = string
@@ -39,6 +39,7 @@ variable "GITHUB_OWNER" {
 variable "GITHUB_TOKEN" {
   type        = string
   description = "Github token"
+  sensitive = true
 }
 
 variable "FLUX_GITHUB_REPO" {
